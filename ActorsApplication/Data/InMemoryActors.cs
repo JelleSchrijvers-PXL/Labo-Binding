@@ -25,7 +25,7 @@ namespace ActorsApplication.Data
                 {
                     LastName = "Johansson",
                     FirstName = "Scarlett",
-                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Scarlett_Johansson_by_Gage_Skidmore_2019.jpg/1200px-Scarlett_Johansson_by_Gage_Skidmore_2019.jpg",
+                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/a/ad/Scarlett_Johansson-8588.jpg",
                     BirthYear = 1984,
                     ShortBio = "An American actress known for her roles in the Marvel Cinematic Universe and Lost in Translation."
                 },
@@ -33,7 +33,7 @@ namespace ActorsApplication.Data
                 {
                     LastName = "Pitt",
                     FirstName = "Brad",
-                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brad_Pitt_2019_by_Glenn_Francis.jpg/800px-Brad_Pitt_2019_by_Glenn_Francis.jpg",
+                    ProfilePicture = "https://upload.wikimedia.org/wikipedia/commons/9/90/Brad_Pitt-69858.jpg",
                     BirthYear = 1963,
                     ShortBio = "An American actor and producer, famous for roles in Fight Club, Once Upon a Time in Hollywood, and 12 Monkeys."
                 },
