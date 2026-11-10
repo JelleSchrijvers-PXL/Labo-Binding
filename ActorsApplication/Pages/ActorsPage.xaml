@@ -7,12 +7,13 @@
 
     <ScrollView>
         <StackLayout>
+            <Button Text="Toevoegen" Clicked="AddActorClicked"/>
             <Label Text="Actors of the day" 
                 Margin="8,8,8,0" 
                 FontSize="Medium" 
                 TextColor="Crimson" 
                 FontAttributes="Bold"/>
-            <CollectionView>
+            <CollectionView x:Name="ActorsCollectionView">
 
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Horizontal" Span="4"/>
@@ -27,7 +28,7 @@
                                 <ColumnDefinition Width="2*" />
                             </Grid.ColumnDefinitions>
 
-                            <Image Source="splash.png"
+                            <Image Source="{Binding ProfilePicture}"
                                    VerticalOptions="Start"
                                    HorizontalOptions="Start"
                                    Aspect="AspectFill"
@@ -42,10 +43,10 @@
                                          Orientation="Vertical">
 
                                 <Label VerticalOptions="Center"
-                                       Text=""
+                                       Text="{Binding FirstName}"
                                        FontAttributes="Bold" />
 
-                                <Label Text=""
+                                <Label Text="{Binding ShortBio}"
                                        MaxLines="4"
                                        VerticalOptions="Start"
                                        FontAttributes="Italic" />

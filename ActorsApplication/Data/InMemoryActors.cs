@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ActorsApplication.Data
 {
-
     public static class InMemoryActors
     {
         public static List<Actor> GetActors()

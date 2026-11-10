@@ -7,9 +7,25 @@
     Shell.FlyoutBehavior="Disabled"
     Title="ActorsApplication">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate pages:ViewToViewBinding}"
-        Route="Home" />
+    <Shell.FlyoutHeader>
+        <Grid Padding="30" BackgroundColor="Black">
+            <Label Text="Actors Application"
+                   TextColor="White"
+                   FontSize="Large"
+                   HorizontalOptions="Center"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Actors">
+        <ShellContent
+            Title="Actors of the day"
+            ContentTemplate="{DataTemplate pages:ActorsPage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About">
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate pages:AboutPage}"/>
+    </FlyoutItem>
 
 </Shell>

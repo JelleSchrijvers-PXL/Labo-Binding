@@ -6,11 +6,12 @@ namespace ActorsApplication.Pages;
 
 public partial class ActorsPage : ContentPage
 {
-
     public ActorsPage()
 	{
 		InitializeComponent();
-	}
+
+        ActorsCollectionView.ItemsSource = InMemoryActors.GetActors();
+    }
 
     private async void AddActorClicked(object sender, EventArgs e)
     {
